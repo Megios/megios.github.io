@@ -1,0 +1,69 @@
+html{
+  font-family: 'Lato', sans-serif;
+}
+.deFormat{
+  background-color: rgb(240, 238, 236);
+  color: brown;
+  width : 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+a.deFormat:hover{
+  color: rgba(255, 209, 149, 0.849);
+}
+.deScore1{
+  height: 30px; 
+  width: 30px; 
+  background-color: brown;
+  border: 5px solid brown;
+  border-radius: 50%;
+}
+.container-fluid{
+  background: rgba(255, 209, 149, 0.849);
+  color: brown;
+  padding-bottom: 20px;
+}
+#butP1,#butP2{
+  margin: 20px;
+}
+.btn-successs{
+  background-color: brown;
+  border-color: black;
+  color: rgba(255, 209, 149, 0.849);
+}
+.btn-successs:hover{
+  background: rgba(255, 209, 149, 0.849);
+  border-color: black;
+  color: brown;
+}
+.btn-infos{
+  background: rgba(255, 209, 149, 0.849);
+  border-color: black;
+  color: brown;
+}
+.btn-infos:hover{
+  color: rgba(255, 209, 149, 0.849);
+  background-color: brown;
+  border-color: black;
+}
+h1{
+  margin: px;
+}
+footer{
+  padding-top: 10px;
+  height: 10vh; 
+  width: 100vw; 
+  background-color: brown;
+  border: 5px solid brown;
+  color: rgba(255, 209, 149, 0.849);
+}
+
+.btn-danger{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: brown;
+  color: rgba(255, 209, 149, 0.849);
+}
+.btn-danger:hover{
+  color: rgba(255, 209, 149, 0.849);
+}
