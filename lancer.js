@@ -112,6 +112,11 @@ $(document).ready(() => {
   const butP2 = document.getElementById('butP2');
   const butP1 = document.getElementById('butP1');
 
+  //button fenetre modal 
+  const chiant = document.getElementById('chiant');
+  const vainqueur = document.getElementById('nomVainqueur');
+  const resetVainqueur = document.getElementById('vainqueurReset')
+
   //affichage
   let tourP= document.getElementById('tourP');
   let score1= document.getElementById('stockP1')
@@ -125,6 +130,7 @@ $(document).ready(() => {
 
   // DE
   let deHTML = document.getElementById('deStyle');
+
 
   deHTML.innerHTML= base
   startB.addEventListener('click', () => {
@@ -179,26 +185,27 @@ $(document).ready(() => {
         player1.innerHTML=jetD.score;
         if (jetD.point===1) {
           jetD.switchP();
-          tourP.innerHTML= name2.innerHTML
+          tourP.innerHTML=name2.innerHTML
+          $('#jet1').toggle()
         }
       } else{
         player2.innerHTML=jetD.score;
         if (jetD.point===1) {
           jetD.switchP();
           tourP.innerHTML= name1.innerHTML
+          $('#jet1').toggle()
         }
       }
     }, 1000);
     
   });
-
+  chiant.addEventListener('click', () =>{
+    console.log('click')
+    $('#jet1').hide()
+  })
   //Bouton reset
 
   reset.addEventListener('click', () => {
-    $('#forjoueur2').show()
-    $('#butP2').show()
-    $('#forjoueur1').show()
-    $('#butP1').show()
     deHTML.innerHTML=base;
     jetD.resetComplet();
     player1.innerHTML=jetD.score;
@@ -254,8 +261,32 @@ $(document).ready(() => {
       tourP.innerHTML= name1.innerHTML;
       jetD.score=0;
     }
-    if ((jetD.stock1>20) || (jetD.stock2>20)){
-      alert('Fin du game')
+    if ((jetD.stock1>=100) || (jetD.stock2>=100)){
+      if (jetD.stock1>=100){
+        vainqueur.innerHTML=name1.innerHTML
+        $('#modalVainqueur').toggle()
+      }
+      if (jetD.stock2>100){
+        vainqueur.innerHTML=name2.innerHTML
+        $('#modalVainqueur').toggle()
+      }
+
+      resetVainqueur.addEventListener('click', () =>{
+        console.log('click')
+        deHTML.innerHTML=base;
+        jetD.resetComplet();
+        player1.innerHTML=jetD.score;
+        player2.innerHTML=jetD.score;
+        score1.innerHTML= '0'
+        score2.innerHTML= '0'
+        tourP.innerHTML= name1.innerHTML
+        document.getElementById("forjoueur2").value=''
+        document.getElementById("forjoueur1").value=''
+        $('#modalVainqueur').hide()
+
+      })
+      
+      
     }
   }
   })
