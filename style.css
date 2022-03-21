@@ -67,3 +67,13 @@ footer{
 .btn-danger:hover{
   color: rgba(255, 209, 149, 0.849);
 }
+.modal-header{
+  background-color: brown;
+  color: rgb(255, 209, 149);
+  border: rgb(92, 23, 23);
+}
+.modal-body ,.modal-footer{
+  background-color: rgb(255, 209, 149);
+  color: brown;
+  border: rgb(92, 23, 23);
+}
