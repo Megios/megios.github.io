@@ -238,7 +238,8 @@ $(document).ready(() => {
   // Mise en score
   
   butPs.addEventListener('click', () =>{
-    
+  if (jetD.score!==0){
+
     if (jetD.player===1) {
       jetD.stock1+=jetD.score;
       score1.innerHTML=jetD.stock1;
@@ -256,5 +257,6 @@ $(document).ready(() => {
     if ((jetD.stock1>20) || (jetD.stock2>20)){
       alert('Fin du game')
     }
+  }
   })
 })
