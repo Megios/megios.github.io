@@ -105,6 +105,7 @@ class JetD{
 $(document).ready(() => {
   //Initialisation différente variable
   let jetD = new JetD();
+  let antispam=0;
   // Button principaux
   const startB = document.getElementById('jouer');
   const reset = document.getElementById('reset');
@@ -134,73 +135,74 @@ $(document).ready(() => {
 
   deHTML.innerHTML= base
   startB.addEventListener('click', () => {
-    jetD = RollDice(jetD)
-    switch (jetD.point){
-      case 1: {
-        deHTML.innerHTML=base;
-        setTimeout(() => {
-          deHTML.innerHTML=lancer1;
-          
-        }, 1000);
-        break;
-      }
-      case 2: {
-        deHTML.innerHTML=base;
-        setTimeout(() => {
-          deHTML.innerHTML=lancer2;
-        }, 1000)
-         break;
-      }
-      case 3: {
-        deHTML.innerHTML=base;
-        setTimeout(() => {
-          deHTML.innerHTML=lancer3;
-        }, 1000);
-        break;
-      }
-      case 4: {
-        deHTML.innerHTML=base;
-        setTimeout(() => {
-          deHTML.innerHTML=lancer4;
-        }, 1000);
-        break;
-      }
-      case 5: {
-        deHTML.innerHTML=base;
-        setTimeout(() => {
-          deHTML.innerHTML=lancer5;
-        }, 1000);
-        break;
-      }
-      case 6: {
-        deHTML.innerHTML=base;
-        setTimeout(() => {
-          deHTML.innerHTML=lancer6;
-        }, 1000); break;
-      }
-    }
-    console.log(`Round actuel : ${jetD.score}`)
-    setTimeout(() => {
-      if (jetD.player===1){
-        player1.innerHTML=jetD.score;
-        if (jetD.point===1) {
-          jetD.switchP();
-          tourP.innerHTML=name2.innerHTML
-          $('#jet1').toggle()
+    if (antispam===0){
+      jetD = RollDice(jetD)
+      antispam=1;
+      switch (jetD.point){
+        case 1: {
+          deHTML.innerHTML=base;
+          setTimeout(() => {
+            deHTML.innerHTML=lancer1;
+            
+          }, 1000);
+          break;
         }
-      } else{
-        player2.innerHTML=jetD.score;
-        if (jetD.point===1) {
-          jetD.switchP();
-          tourP.innerHTML= name1.innerHTML
-          $('#jet1').toggle()
+        case 2: {
+          deHTML.innerHTML=base;
+          setTimeout(() => {
+            deHTML.innerHTML=lancer2;
+          }, 1000)
+          break;
+        }
+        case 3: {
+          deHTML.innerHTML=base;
+          setTimeout(() => {
+            deHTML.innerHTML=lancer3;
+          }, 1000);
+          break;
+        }
+        case 4: {
+          deHTML.innerHTML=base;
+          setTimeout(() => {
+            deHTML.innerHTML=lancer4;
+          }, 1000);
+          break;
+        }
+        case 5: {
+          deHTML.innerHTML=base;
+          setTimeout(() => {
+            deHTML.innerHTML=lancer5;
+          }, 1000);
+          break;
+        }
+        case 6: {
+          deHTML.innerHTML=base;
+          setTimeout(() => {
+            deHTML.innerHTML=lancer6;
+          }, 1000); break;
         }
       }
-    }, 1000);
-    
+      setTimeout(() => {
+        antispam=0;
+        if (jetD.player===1){
+          player1.innerHTML=jetD.score;
+          if (jetD.point===1) {
+            jetD.switchP();
+            tourP.innerHTML=name2.innerHTML
+            $('#jet1').toggle()
+          }
+        } else{
+          player2.innerHTML=jetD.score;
+          if (jetD.point===1) {
+            jetD.switchP();
+            tourP.innerHTML= name1.innerHTML
+            $('#jet1').toggle()
+          }
+        }
+      }, 1000);
+    } else console.log('tu spam trop vite')    
   });
   chiant.addEventListener('click', () =>{
-    console.log('click')
     $('#jet1').hide()
   })
   //Bouton reset
@@ -243,9 +245,8 @@ $(document).ready(() => {
   })
 
   // Mise en score
-  
   butPs.addEventListener('click', () =>{
-  if (jetD.score!==0){
+  if (jetD.score!==0 ){
 
     if (jetD.player===1) {
       jetD.stock1+=jetD.score;
