@@ -1,105 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeu de Dée</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <title>C2M</title>
+  <link rel="stylesheet" href="./asset/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/dfo8kwh.css">
+  <!--<link rel="shortcut icon" href="./ressources/logo.pgn" /> -->
 </head>
 
-<body>
-  <main>
-    <div class="container-fluid" style="min-height: 90vh;min-width: 100vw;">
-      <div class="row text-center">
-        <h1 class="text-center">Bienvenue <br> AU <br> Jeux de Dés pour studi</h1>
-
-      </div>
-
-      <div class="row ">
-        <div class="col-12 col-md-4 text-center mx-auto">
-          <div class="d-flex flex-column justify-content-evenly">
-            <h2 class="m-3"> Souhaitez vous connaitre les regles ?</h2>
-            <br>
-            <!-- Je ne comprends pas ce qu'il coince au niveau du modal-->
-            <button class="btn btn-successs m-auto m-3" data-bs-toggle="modal" data-bs-target="#joinHelp"> Vas-y
-            </button>
-
-          </div>
-        </div>
-        <div class=" col-12 col-md-6 text-center" style="min-width: 240px;">
-          <h2 class="m-3">Pour demarrer une nouvelle partie</h2>
-          <br>
-          <p>Appuyez sur le bouton <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-play-fill m-auto" viewBox="0 0 16 16">
-              <path
-                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-            </svg></p>
-        </div>
-        <div class=" col-12 col-md-6 text-center" style="min-width: 100vw; margin-top: 20px;">
-          <div class="shadow d-flex flex-column justify-content-around deFormat m-auto m-3" id="deStyle">
-            <a class="deFormat" href="games.html">
-              <!-- A modifier bouton play-->
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
-                class="bi bi-play-fill m-auto" viewBox="0 0 16 16">
-                <path
-                  d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
+<body class="container">
+  <header class="Header HeaderMobile">
+    <div class="LogoContainer ">
+      <a href="Index.html"> 
+        <img src="ressources/logo.png" alt="Logo Carrosserie" id="Logo">
+      </a>
     </div>
-  </main>
-  <footer class="text-center">
-    <p>Copyright Evolve G @2022</p>
-
-  </footer>
-  <div class="modal" tabindex="-1" role="dialog" id="joinHelp">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Jeu de Dés</h5>
-          <button type="button" class="btn btn-infos close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <div class="Menu MenuMobile">
+      <ul class="Menu-link MenulinkMobile">
+        <li><a class="move-link" href="#">Accueil</a></li>
+        <li><a class="move-link" href="#service">Service</a></li>
+        <li><a class="move-link" href="page/carrosserie.html">Carrosserie</a></li>
+        <li><a class="move-link" href="page/mecanique.html">Mécanique</a></li>
+        <li><a class="move-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="containerPrincipal">
+    <div class="SectionAccueil">
+      <img src="ressources/PhotoPresentation.png" alt="yaz" id="Yaz">
+      <article class="desc">
+        <h1>CARROSSERIE DE MONTOLIVET</h1>
+        <h2>30 ans d'experience à votre service</h2>
+        <p>
+          Votre nouvelle carrosserie vous accueille à Montolivet,<br>
+          située dans une zone stratégique et facile d'accès. Une<br>
+          équipe de professionnels agrées vous est dédiée afin<br>
+          de prendre en charge tout sinistre. Nous vous<br>
+          accompagnons dès le début, dans vos démarches<br>
+           auprès des assurances jusqu'à la restitution de votre<br>
+           véhicule. Notre garage possède un plateau technique <br>
+            de pointe, dernière génération, et ce, pour répondre à<br> toutes vos demandes
+        </p>
+      </article>
+    </div>
+    <img src="ressources/skylineMarseille.jpeg" alt="skyline" id="skyline">
+    <div class="sectionService">
+      <h3 style="color: #f3f2f1;">Un équipement de pointe pour répondre à tous les besoins.</h3>
+      <div class="containLogoText">
+        <div class="LogoText">
+          <img src="ressources/UtilitairesLogo.jpeg" alt="UtilitairesLogo">
+          <p>Utilitaires</p>
         </div>
-        <div class="modal-body">
-          <h2>Règles</h2>
-          <p>Le jeu comprend 2 joueurs sur un seul et même écran.</p>
-          <p>Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL).
-            À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite.
-            Le
-            résultat d’un lancer est ajouté au ROUND.
-            Lors de son tour, le joueur peut décider à tout moment de
+        <div class="LogoText">
+          <img src="ressources/scooterLogo.jpeg" alt="ScootersLogo">
+          <p>Scooters</p>
+        </div>
+        <div class="LogoText">
+          <img src="ressources/berlinesLogo.jpeg" alt="BerlinesLogo">
+          <p>Berlines</p>
+        </div>
+        <div class="LogoText">
+          <img src="ressources/MotosLogo.jpeg" alt="MotoLogo">
+          <p>motos</p>
+        </div>
+      </div>
+      <div class="videoContainer">
+        <video class="voituredore" src="ressources/voitureDore.mp4" autoplay muted loop></video>
+      </div>
+      <h3>
+        Prise en charge de véhicules de toutes marques<br> 
+        et toutes assurances.
+      </h3>
+      <div class="service1">
+        <div id="p1li" class="p1"><button type="button">Véhicule de courtoisie</button>
+          <p id="textCard1" class="cacher">Des véhicules de prêt sont mis à <br>
+            disposition pendant la durée de <br>réparation de votre véhicule.<br>
+            Les voitures que l'on vous fournit sont <br>récentes et entretenues régulièrement.</p>
+        </div>
+        <div id="p2li" class="p1"><button>Accompagnement<br>administratif</button>
+          <p id="textCard2" class="cacher">Nous travaillons avec toutes les <br> 
+            assurances et vous accompagnons dans
+            vos démarches si vous le souhaitez.
           </p>
-          <ul>
-            <li>Cliquer sur l’option “Hold”, qui permet d’envoyer les points du ROUND vers le GLOBAL. Ce sera alors le
-              tour de l’autre joueur.</li>
-            <li>Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.
-              Le premier joueur qui atteint les 100 points sur global gagne le jeu.</li>
-          </ul>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-infos" data-bs-dismiss="modal">Ok</button>
+        <div id="p3li" class="p1"><button>Prise en charge rapide</button>
+          <p id="textCard3" class="cacher">
+            Dès la première prise de contact, votre<br> demande est traitée dans les plus brefs<br> délais.
+          </p>
         </div>
       </div>
+      <div class="infoService" id="service">
+        <h2>Nos prestations</h2>
+          <p>Fort d'une expérience de 30ans, notre équipe met à disposition son savoir-faire et vous<br>
+          propose un panel de prestations complètes pour réparer, entretenir vos véhicules.
+        </p>
+      </div>
+      <div class="service2">
+        <div id="p4li" class="p1"><a href="page/carrosserie.html"><button type="button">Carrosserie</button></a></div>
+        <div id="p5li" class="p1"><a href="page/mecanique.html"><button>Mécanique</button></a></div>
+        <div id="p6li" class="p1"><button>Service</button></div>
+      </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-
+    <!--
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d23229.47678536302!2d5.413335764365818!3d43.29992636462283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d43.2898048!2d5.4460416!4m5!1s0x12c9bf0aba8f526b%3A0xfeb54afebd7ea345!2s271%20Av.%20de%20Montolivet%2C%2013012%20Marseille!3m2!1d43.316533199999995!2d5.4156061!5e0!3m2!1sfr!2sfr!4v1654688028980!5m2!1sfr!2sfr" width="300" height="225" style="border:0; margin: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  -->
+  </main>
+  <footer>
+    <p>© Copyright 2022 - C2M</p>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

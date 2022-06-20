@@ -1,2 +1,0 @@
-Evaluation studi 
-GDWFSDVSWEBAJAVAEXAIII1A

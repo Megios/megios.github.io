@@ -1,0 +1,61 @@
+body{
+  background-image: url(../ressources/backgroundMecanique.png);
+  background-size: cover;
+}
+.containerMécanique{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: 'aileron, sans sherif';
+
+}
+.text{
+  display:flex;
+  flex-direction: column;
+  width: 50vw;
+}
+h1{
+  margin: 5vw 0;
+  font-size: 3.4vw;
+  color: #f3f2f1;
+}
+.text p{
+  color: #f3f2f1;
+  font-size: 2.2vw ;
+}
+.backgroundméca{
+  position:absolute;
+  z-index: -1;
+  opacity: 0.4;
+  width: 65vw;
+  height: 45vw;
+}
+
+.containLogoTextMécanique{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  margin: 0 2vw;
+}
+.LogoTextMécanique{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 1.4vw;
+  color: #f3f2f1;
+}
+.LogoTextMécanique img{
+  width: 10vw;
+}
+footer{
+  margin: 0;
+}
+footer p{
+  font-size: 2.2vw;
+}

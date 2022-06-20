@@ -1,0 +1,271 @@
+@font-face {
+  font-family: Karla;
+  src: url(/fonts/Karla-VariableFont_wght.ttf) format(‘truetype’);
+}
+html{
+  margin: 0;
+}
+h3{
+  margin-top: 5vw;
+}
+li{
+  list-style-type: none;
+}
+ul{
+  padding: 0;
+}
+body{
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  background-color: black;
+}
+footer{
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  background-color: #141414;
+  color: #f3f2f1;
+}
+
+.Header{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.videoContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.voituredore{
+  width: 80vw;
+  margin-right: 15vw;
+}
+
+.Menu{
+  margin-right: 5%;
+  width: 60%;
+  padding-bottom: 5%;
+}
+/*
+.HeaderMobile{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #141414;
+}
+.MenuMobile{
+  margin: 0;
+  padding: 0;
+}
+.MenulinkMobile{
+  position:absolute;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+*/
+.LogoContainer{
+  
+  margin-left: 10%;
+}
+#Logo{
+  width: 18vw;
+}
+
+.Menu-link{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.move-link{
+  color: #f3f2f1;
+  font-size: 2.2vw;
+  text-decoration: none;
+}
+.move-link:hover{
+  color: #a78d4d;
+}
+/*--- dqkshdqsdqs --->*/
+.SectionAccueil{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.desc{
+  margin-right: 5%;
+  text-align: end;
+}
+.desc h1{
+  color: #f3f2f1;
+  font-weight: bold;
+  font-size: 2.3vw;
+  margin: 10px;
+}
+
+.desc h2{
+  color: #a78d4d;
+  font-size: 1.5vw;
+  font-family: "aileron, sans serif";
+  font-weight: 700;
+  font-style: normal;
+}
+.desc p{
+  color: #f3f2f1;
+  font-size: 1.5vw;
+}
+#Yaz{
+  width: 40vw;
+}
+#skyline{
+  position: relative;
+  margin: 0;
+  width: 100%;
+  top:-20px;
+  z-index: -1;
+}
+.sectionService img{
+  width: 30vh;
+}
+.service1{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2vw;
+}
+.service2{
+  display: flex;
+  justify-content: space-around;
+}
+#p1li{
+  background-image: url(../ressources/photoCar.png);
+}
+
+#p2li{
+  background-image: url(../ressources/photoAccueil.png);
+}
+#p3li{
+  background-image: url(../ressources/PhotoServiceex.png);
+}
+
+#p4li{
+  background-image: url(../ressources/DisneyLandParis.jpg);
+}
+#p5li{
+  background-image: url(../ressources/photoMecanique.png);
+}
+#p6li{
+  background-image: url(../ressources/photoservice.png);
+}
+.p1{
+  width: 23vw;
+  height: 18vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+
+.sectionService button{
+  background-color: rgba(20,20,20,0.60);
+  color: #f3f2f1;
+  font-size: 1.6vw;
+  height: 6vw;
+  margin-top: 1em;
+  padding: -10px 2em;
+  padding-bottom: 0;
+  cursor: pointer;
+  border: 1px transparent ;
+  width: 18vw;
+}
+.sectionService button:hover{
+  color: #a78d4d;
+  
+}
+.sectionService h3{
+  text-align: center;
+  color: #a78d4d;
+  font-size: 2.5vw;
+}
+.sectionService:first-child{
+  color: #f3f2f1;
+}
+/*------------------ containLogoText -------------------->*/
+.containLogoText{
+  display: flex;
+  justify-content: space-around;
+}
+.LogoText{
+  color: #f3f2f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.LogoText img{
+  width: 10vw;
+}
+.LogoText p{
+  font-size: 1.6vw;
+}
+/* -------------------section Mécanique-----------------*/
+
+
+
+
+
+.sp1{
+  background-image: url(../ressources/bannierevehiculedepret.jpg);
+}
+h4{
+  font-size: 2.2vw;
+}
+.descSliders{
+  height: 50vh;
+  font-size: 1.5vw;
+}
+
+.descContain{
+  width: 40vw;
+  text-align: end;
+  margin-right: 10vw;
+}
+.map{
+  display: flex;
+  justify-content: center;
+}
+
+.cacher{
+  display: none;
+}
+
+.service1 p{
+  color: #f3f2f1;
+  font-size: 1.2vw;
+  text-align: center;
+  background-color: rgba(20,20,20,0.30);
+  margin: 10px 10px;
+}
+
+.infoService{
+  color: #f3f2f1;
+  margin: 5vw 5vw;
+}
+.infoService h2{
+  font-size: 3.0vw;
+}
+.infoService p{
+  font-size: 1.6vw;
+}
+footer p{
+  font-size: 2.2vw;
+}
