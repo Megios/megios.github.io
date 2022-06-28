@@ -136,6 +136,7 @@ body{
 .service2{
   display: flex;
   justify-content: space-around;
+  margin-bottom: 2vw;
 }
 #p1li{
   background-image: url(../ressources/photoCar.png);
