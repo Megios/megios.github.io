@@ -1,6 +1,7 @@
 body{
   background-image: url(../ressources/backgroundMecanique.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .containerMécanique{
   display: flex;
