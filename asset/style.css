@@ -260,7 +260,7 @@ h4{
   font-size: 1.6vw;
 }
 footer p{
-  font-size: 1.0vw;
+  font-size: 1.4vw;
 }
 .map{
   position: absolute;
@@ -271,7 +271,7 @@ footer{
   flex-direction: column;
   justify-content: space-between;
   color: #000000;
-  height: 25vh;
+  height: 18vw;
 }
 .infofooter{
   height: 100%;
@@ -292,11 +292,16 @@ footer{
   margin: 0;
 }
 .copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
   z-index: 2;
   background-color: #000000;
   margin: 0;
   text-align: center;
-  height: 5vh;
+  height: 3vw;
+  color: #f3f2f1;
 }
 .address{
   display: flex;
@@ -305,7 +310,7 @@ footer{
 }
 h5{
   margin: 0;
-  font-size: 1.4vw;
+  font-size: 1.7vw;
 }
 .infofooter img{
   margin: 1vh 2vw;
