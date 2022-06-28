@@ -297,10 +297,9 @@ footer{
   justify-content: end;
   align-items: center;
   z-index: 2;
-  background-color: #000000;
   margin: 0;
   text-align: center;
-  height: 3vw;
+  background-color: #000000;
   color: #f3f2f1;
 }
 .address{
