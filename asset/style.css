@@ -270,7 +270,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #f3f2f1;
+  color: #000000;
   height: 25vh;
 }
 .infofooter{
