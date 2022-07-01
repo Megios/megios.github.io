@@ -376,3 +376,45 @@ h5{
 .modal-container p{
   font-size: 2.0vw;
 }
+.carroussel{
+  display: flex;
+  justify-content: center;
+  margin: 4vw auto;
+  width: 80vw;
+  height: 30vw;
+}
+.carroussel img{
+  height: 100%;
+}
+.imgContainer{
+  margin: 2vw;
+  width: 30%;
+}
+.btnSlider{
+  background: none;
+  border: none;
+  display: contents;
+  position:block;
+  top:50%;
+  margin: 10px;
+  padding: 10px;
+}
+.leftButton{
+  left: 10px;
+}
+.rightButton img{
+  right: -14vw;
+}
+.buttonSliderCache{
+  display: none;
+}
+.btnSlider img{
+  position: relative;
+  width: 5vw;
+  height: 5vw;
+  opacity: 0.6;
+  top: -15vw;
+}
+.btnSlider img:hover{
+  cursor: pointer;
+}
