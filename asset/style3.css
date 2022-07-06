@@ -35,7 +35,7 @@ main{
 
 .containListService p{
   color: #f3f2f1;
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   font-family: "aileron, sans serif";
   font-style: normal;
   margin: 0vw 0vw 0vw 0.5vw;
@@ -68,5 +68,39 @@ li div{
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+@media screen and (max-width:500px) {
+  main{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .containerService{
+    width: 70vw;;
+  }
+  .containerService img{
+    width: 60vw;
+  }
+  .containListService{
+    width: 90vw;
+    text-align: center;
+  }
+  .containerService h1{
+    text-align: center;
+    font-size: 4vw;
+  }
+  .containListService h3{
+    font-size: 2.9vw;
+  }
+  .containListService p{
+    font-size: 2.2vw;
+  }
+  .containListService span{
+    font-size: 3.0vw;
+  }
+  .containListService div{
+    display: flex;
+    justify-content: center;
+  }
 }
 
