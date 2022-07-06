@@ -237,10 +237,7 @@ h4{
   text-align: end;
   margin-right: 10vw;
 }
-.map{
-  display: flex;
-  justify-content: center;
-}
+
 
 .cacher{
   display: none;
@@ -419,6 +416,12 @@ h5{
 .btnSlider img:hover{
   cursor: pointer;
 }
+.map iframe{
+  height: 18vw;
+}
+.texteContact img{
+  width: 2.5vw;
+}
 
 @media screen and (max-width:500px) {
   .SectionAccueil{
@@ -478,5 +481,26 @@ h5{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+}
+@media screen and (max-width:950px) {
+  
+  footer{
+    height: 40vw;
+  }
+  .map iframe{
+    height: 38vw;
+  }
+  .texteContact p{
+    font-size: 2.4vw;
+  }
+  .texteContact h5{
+    font-size: 2.6vw;
+  }
+  .texteContact img{
+    width: 5vw;
+  }
+  .copyright{
+    font-size: 2.7vw;
   }
 }
