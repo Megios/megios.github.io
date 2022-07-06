@@ -57,3 +57,37 @@ h1{
 footer{
   margin: 0;
 }
+.beforeCarroussel{
+  text-align: center;
+  color: #f3f2f1;
+  font-size: 2.6vw;
+}
+
+@media  screen and (max-width:500px) {
+  .containerMécanique{
+    flex-direction: column;
+    align-items: center;
+  }
+  .text{
+    width: 70%;
+  }
+  .containerMécanique h1{
+    font-size: 4.00vw;
+    text-align: center;
+  }
+  .text p{
+    font-size: 3.6vw;
+    text-align: center;
+  }
+  .containLogoTextMécanique{
+    width: 60vw;
+    justify-content: space-around;
+  }
+  .containLogoTextMécanique p{
+    font-size: 2.8vw;
+    text-align: center;
+  }
+  .beforeCarroussel{
+    font-size: 3.8vw;
+  }
+}
