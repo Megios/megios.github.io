@@ -419,3 +419,64 @@ h5{
 .btnSlider img:hover{
   cursor: pointer;
 }
+
+@media screen and (max-width:500px) {
+  .SectionAccueil{
+    flex-direction: column-reverse;
+    text-align: center
+  };
+  article.desc{
+    width: 90vw;
+  }
+  article.desc h1{
+    text-align: center;
+    font-size: 4vw;
+  }
+  article.desc h2{
+    text-align: center;
+    font-size: 3vw;
+  }
+  article.desc p{
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  #Yaz{
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 4vw;
+  }
+  .sectionService h3{
+    font-size: 4vw;
+  }
+  .service1{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .p1{
+    width: 69vw;
+    height: 54vw;
+    margin-bottom: 5vw;
+  }
+  .service1 p{
+    font-size: 3.6vw;
+  }
+  .sectionService button{
+    font-size: 4.8vw;
+    height: 18vw;
+    width: 54vw;
+  }
+  .infoService h2{
+    text-align: center;
+    font-size: 4vw;
+  }
+  .infoService p{
+    text-align: center;
+    font-size: 3.6vw;
+  }
+  .service2{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
