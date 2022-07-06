@@ -22,7 +22,7 @@ main{
 }
 .containerService img{
   width: 35vw;
-  padding: 3vw 3vw 0 3vw;
+  margin: auto;
 }
 
 
@@ -69,6 +69,7 @@ li div{
   justify-content: space-between;
   height: 100%;
 }
+
 @media screen and (max-width:500px) {
   main{
     flex-direction: column;
@@ -83,24 +84,28 @@ li div{
   }
   .containListService{
     width: 90vw;
-    text-align: center;
   }
   .containerService h1{
     text-align: center;
+    margin: 5vw 0;
     font-size: 4vw;
   }
   .containListService h3{
-    font-size: 2.9vw;
+    font-size: 3.9vw;
   }
   .containListService p{
-    font-size: 2.2vw;
+    font-size: 3.2vw;
+    padding-left: 12vw;
+    margin-bottom: 2vw;
+    width: 63vw;
   }
   .containListService span{
-    font-size: 3.0vw;
+    font-size: 4.0vw;
   }
   .containListService div{
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 17vw;
   }
 }
 
