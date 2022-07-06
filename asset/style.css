@@ -482,6 +482,9 @@ h5{
     justify-content: space-around;
     align-items: center;
   }
+  #skyline{
+    top:-10px;
+  }
 }
 @media screen and (max-width:950px) {
   
