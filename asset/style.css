@@ -416,8 +416,12 @@ h5{
 .texteContact img{
   width: 2.5vw;
 }
+.imgContainer{
+  width: 80vw;
+}
 
 @media screen and (max-width:500px) {
+  
   .SectionAccueil{
     flex-direction: column-reverse;
     text-align: center
