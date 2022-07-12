@@ -418,9 +418,6 @@ h5{
 }
 
 @media screen and (max-width:500px) {
-  .imgContainer{
-    width: 90vw;
-  }
   .SectionAccueil{
     flex-direction: column-reverse;
     text-align: center
