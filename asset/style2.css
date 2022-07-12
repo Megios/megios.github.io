@@ -61,6 +61,7 @@ footer{
   text-align: center;
   color: #f3f2f1;
   font-size: 2.6vw;
+  margin-bottom: 0.5em;
 }
 
 @media  screen and (max-width:500px) {
